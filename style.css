@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+
+@import "reset.css";
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.js-toDo__form input {
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  padding: 0 40px;
+  border-bottom: 5px solid white;
+  width: 300px;
+  height: 40px;
+  font-size: 30px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0);
+  transition: all 0.5s ease-in-out;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.js-toDo__form input:focus {
+  box-shadow: none;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.7);
+}
+.js-toDo__form input:focus ::placeholder {
+  color: white;
+}
+.js-user__greeting {
+  margin: 20px 0px;
+  font-size: 70px;
+  font-weight: 700;
+  color: white;
+}
+.js-clock span {
+  font-size: 120px;
+  color: white;
+}
+.js-user__greeting,
+.js-user__form {
+  display: none;
+}
+.showing {
+  display: block;
+}
+.js-toDo__list {
+  list-style: none;
+}
+.bgImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.js-toDo__list li {
+  display: flex;
+  align-items: center;
+}
+
+.js-toDo__list button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: white;
+  margin-right: 10px;
+  transition: all 0.2s ease-in-out;
+}
+.js-toDo__list button:hover {
+  color: greenyellow;
+}
+.js-toDo__list span {
+  font-size: 30px;
+  color: white;
+}
+.js-weather {
+  position: absolute;
+  top: 0;
+  right: 3px;
+}
